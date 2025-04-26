@@ -52,3 +52,13 @@ $section-headings-color: #333333;
       }
     }
   }
+
+  .teaser {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .teaser video {
+    flex: 1;
+    min-width: 300px; 
+  }
