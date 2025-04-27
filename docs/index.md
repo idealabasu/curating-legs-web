@@ -63,7 +63,7 @@ Three designs for each locomotion type were fabricated and tested in the real wo
 
 We also tested some designs in less controlled environments by remote controlling them to traverse different terrains. The learned policy is quite robust against slippages, slopes, drops, and gaps. 
 
-<video width="100%" muted controls preload="auto">
+<video width="100%" muted controls>
   <source src="assets/videos/rc.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
