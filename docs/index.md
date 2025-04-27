@@ -50,16 +50,15 @@ With the learned polices, performance can be evaluated in simulation and analyze
 # Physical Validations
 Three designs for each locomotion type were fabricated and tested in the real world. Their performance aligns relatively well with the selection intentions. Quantitative mismatches do exist due to various Sim2Real gaps. 
 
-<div class="double-column-container">
-  <video muted controls>
-    <source src="assets/videos/loc_exps.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-  <video muted controls>
-    <source src="assets/videos/forced_loc_exps.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</div>
+<video width="100%" muted controls>
+  <source src="assets/videos/loc_exps.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<video width="100%" muted controls>
+  <source src="assets/videos/forced_loc_exps.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
 We also tested some designs in less controlled environments by remote controlling them to traverse different terrains. The learned policy is quite robust against slippages, slopes, drops, and gaps. 
 
