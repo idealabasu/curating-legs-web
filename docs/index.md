@@ -21,12 +21,12 @@ With two papers, we showcase the proposed methdos in selecting leg designs for t
 The fast running design reaches a maximum speed of 0.7 m/s or 5.4 body-lengths per second, and the efficient design has a cost of transport of 0.3. The top performer in pulling walks at 0.5 body-lengths per second while exerting a force that is almost 60% of its weight.
 
 # Tunable Legs
-The proposed leg design has a range of tunable design parameters, including leg length, foot travel, transmission ratio, and passive parallel and series stiffness. Thanks to  laminate design and fabrication techniques, it is also straightforward to model, low-cost, and fast to manufacture. Its feasible leg design space can be spanned with a "flood fill" algorithm. 400 designs were generated and 6 designs were made. 
+The proposed leg design has a range of tunable design parameters, including leg length, foot travel, transmission ratio, and passive parallel and series stiffness. Thanks to laminate design and fabrication techniques, it is also straightforward to model, low-cost, and fast to manufacture. Its feasible leg design space can be spanned with a "flood fill" algorithm. 400 designs were generated and 6 designs were made. 
 
 ![tunable legs](assets/images/legs.png)
 
 # Design-aware Policies
-The locomotion policies observe leg designs. Curriculum strategies, also similar to "flood fill", are employed to gradually increase the task difficulties, so that each design's physical limits can be identified and reached. 
+Two locomotion policies are trained separately for the pure and force-based locomotion with reinforcement learning. Both of them observe leg designs to adapt to the different dynamics. Curriculum strategies, also similar to "flood fill", are employed to gradually increase the design-dependent task difficulties, so that each design's physical limits can be identified and reached. 
 
 <div class="double-column-container">
   <video muted controls>
@@ -46,3 +46,24 @@ With the learned polices, performance can be evaluated in simulation and analyze
   <img src="assets/images/vx_trend.png" alt="vx trend">
   <img src="assets/images/cot_trend.png" alt="cot trend">
 </div>
+
+# Physical Validations
+Three designs for each locomotion type were fabricated and tested in the real world. Their performance aligns relatively well with the selection intentions. Quantitative mismatches do exist due to various Sim2Real gaps. 
+
+<div class="double-column-container">
+  <video muted controls>
+    <source src="assets/videos/loc_exps.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <video muted controls>
+    <source src="assets/videos/forced_loc_exps.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+We also tested some designs in less controlled environments by remote controlling them to traverse different terrains. The learned policy is quite robust against slippages, slopes, drops, and gaps. 
+
+<video width="100%" muted controls preload="auto">
+  <source src="assets/videos/rc.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
