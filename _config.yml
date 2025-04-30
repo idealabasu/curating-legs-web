@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Curating Legs
 email: iicfcii@gmail.com
-# description: Curating Tunable, Compliant Legs for Specialized Tasks
-baseurl: "/curating-legs" # the subpath of your site, e.g. /blog
+description: Curating Tunable, Compliant Legs for Specialized Tasks
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "iicfcii.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
