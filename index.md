@@ -66,3 +66,20 @@ We also tested some designs in less controlled environments by remote controllin
   <source src="assets/videos/rc.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
+
+# BibTeX
+```
+@article{chen_curating_2025,
+  title = {Curating Tunable, Compliant Legs for Specialized Tasks},
+  author = {Chen, Fuchen and Aukes, Daniel M.},
+  journal = {The International Journal of Robotics Research},
+  year = {2025},
+}
+
+@inproceedings{chen_informed_2025,
+  title = {Informed Repurposing of Quadruped Legs for New Tasks},
+  author = {Chen, Fuchen and Aukes, Daniel M.},
+  booktitle = {2025 IEEE International Conference on Robotics and Automation (ICRA)},
+  year = {2025},
+}
+```
